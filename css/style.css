@@ -242,4 +242,8 @@ img{
   color: var(--first-color-alt);
 }
 
-/* ================================================NAV============================================= */
+/* Show Menu */
+.show-menu{
+  bottom:  0;
+  transition-delay: 0.1s;
+}

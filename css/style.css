@@ -9,7 +9,7 @@
   /* --hue-color: 250;  */
   --hue-color: 180;
   /* --hue-color: 340;  */
-  /* --hue-color: 67; Yellow */
+  /* --hue-color: 67;  */
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -173,6 +173,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: var(--mb-1);
+
 }
 
 .nav__logo,
@@ -535,7 +537,7 @@ img {
   text-transform: capitalize;
 }
 
-.skills__header{
+.skills__header {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-2-5);
@@ -543,22 +545,22 @@ img {
 }
 
 .skills__icon,
-.skills__arrow{
+.skills__arrow {
   font-size: 2rem;
   color: var(--first-color);
 }
 
-.skills__icon{
+.skills__icon {
   margin-right: var(--mb-0-75);
 }
 
-.skills__tile{
+.skills__tile {
   font-size: var(--h3-font-size);
 }
 
-.skills__arrow{
+.skills__arrow {
   margin-left: auto;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .skills__list .list {
@@ -573,17 +575,17 @@ img {
   color: var(--text-color);
 }
 
-.skills__close .skills__list{
+.skills__close .skills__list {
   height: 0;
   overflow: hidden;
 }
 
-.skills__open  .skills__list{
+.skills__open .skills__list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
 }
 
-.skills__open .skills__arrow{
+.skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
 /* ================================================  Portfolio  ============================================= */
@@ -861,74 +863,72 @@ img {
     padding: 0 1rem;
   }
 
-  .nav{
+  .nav {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
   }
 
   .nav__icon,
   .nav__close,
-  .nav__toggle{
+  .nav__toggle {
     display: none;
   }
 
-  .nav__list{
-    display:  flex;
+  .nav__list {
+    display: flex;
     column-gap: 2rem;
-
   }
 
-  .nav__menu{
+  .nav__menu {
     margin-left: auto;
   }
 
-  .change-theme{
+  .change-theme {
     margin: 0;
   }
 
-  .home__container{
+  .home__container {
     row-gap: 5rem;
   }
 
-
-  .home__content{
+  .home__content {
     padding-top: 5.5rem;
     column-gap: 2rem;
   }
 
-  .home__blob{
+  .home__blob {
     width: 270px;
   }
 
-  .home__scroll{
-     display: block;
+  .home__scroll {
+    display: block;
   }
 
-  .home__scroll-button{
+  .home__scroll-button {
     margin-left: 3rem;
   }
 
-  .about__container{
+  .about__container {
     column-gap: 5rem;
   }
 
-  .about__img{
+  .about__img {
     width: 350px;
   }
 
-  .about__description{
+  .about__description {
     text-align: initial;
   }
 
-  .about__info{
+  .about__info {
     justify-content: space-between;
   }
 
-  .about__buttons{
+  .about__buttons {
     justify-content: initial;
   }
 
-  .qualification__tabs{
+  .qualification__tabs {
     justify-content: space-evenly;
   }
 }

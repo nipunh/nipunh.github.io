@@ -535,10 +535,36 @@ img {
   text-transform: capitalize;
 }
 
-.set .list {
+.skills__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__tile{
+  font-size: var(--h3-font-size);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skills__list .list {
   padding-block: 8px;
   display: grid;
-  grid-template-columns: 1fr 28px;
+  grid-template-columns: 1fr 26px;
   color: var(--text-color-light);
   text-transform: uppercase;
 }
@@ -547,6 +573,19 @@ img {
   color: var(--text-color);
 }
 
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open  .skills__list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
+}
 /* ================================================  Portfolio  ============================================= */
 
 .portfolio__container {

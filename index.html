@@ -215,8 +215,132 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
-        <div class="skills__container container">
-          <div class="set">
+        <div class="skills__container container grid">
+
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-globe skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Web Development</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Html</label>
+                <i class="fab fa-html5"></i>
+              </div>
+  
+              <div class="list">
+                <label>Css</label>
+                <i class="fab fa-css3"></i>
+              </div>
+  
+              <div class="list">
+                <label>Java Script</label>
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frameworks</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Node JS</label>
+                <i class="fab fa-node-js"></i>
+              </div>
+  
+              <div class="list">
+                <label>React</label>
+                <i class="fab fa-react"></i>
+              </div>
+  
+              <div class="list">
+                <label>React Native</label>
+                <i class="fas fa-atom"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Software Engineering</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>C++</label>
+                <i class="fas fa-code"></i>
+              </div>
+  
+              <div class="list">
+                <label>SQL</label>
+                <i class="fas fa-table"></i>
+              </div>
+  
+              <div class="list">
+                <label>Data Structure</label>
+                <i class="fas fa-project-diagram"></i>
+              </div>
+  
+              <div class="list">
+                <label>ALgorithms</label>
+                <i class="fas fa-square-root-alt"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Others</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Git</label>
+                <i class="fab fa-git-alt"></i>
+              </div>
+  
+              <div class="list">
+                <label>Excel, Word, Power Point</label>
+                <i class="far fa-file-word"></i>
+              </div>
+  
+              <div class="list">
+                <label>Search Engine Optimisation</label>
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="set">
             <span class="""><i class="uil uil-globe"></i></span>
             <header>Web Development</header>
             <div class="list">
@@ -279,7 +403,7 @@
               <i class="fas fa-square-root-alt"></i>
             </div>
             
-          </div>
+          </div> -->
         </div>
 
       </section>
@@ -423,7 +547,7 @@
 
 
       <!--============================== Portfolio ===========================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section" id="portfolio"> 
       <h2 class="section__title">Portfolio</h2>
       <span class="section__subtitle">Recent Projects</span>
 
@@ -446,6 +570,21 @@
 
           <!--============================== Project 2 ===========================-->
           <div class="portfolio__content grid swiper-slide">
+            <img src="./img/work1.jpg" alt="" class="portfolio__img">
+            
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Virtual Painter</h3>
+              <p class="portfolio__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, deserunt id assumenda error numquam reprehenderit quidem placeat iste dolor quia voluptates temporibus ipsa doloremque explicabo fuga. 
+              </p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Under Construction <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--============================== Project 3 ===========================-->
+          <div class="portfolio__content grid swiper-slide">
             <img src="./img/work3.jpg" alt="" class="portfolio__img">
             
             <div class="portfolio__data">
@@ -460,7 +599,7 @@
           </div>
 
 
-          <!--============================== Project 3 ===========================-->
+          <!--============================== Project 4 ===========================-->
           <div class="portfolio__content grid swiper-slide">
             <img src="./img/work4.jpg" alt="" class="portfolio__img">
             

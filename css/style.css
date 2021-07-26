@@ -6,9 +6,9 @@
   --header-height: 3rem;
   --font-semi: 600;
   /* --hue-color: 142; Green */
-  /* --hue-color: 250; Purple */
-  --hue-color: 230;
-  /* --hue-color: 340; Pink */
+  /* --hue-color: 250;  */
+  --hue-color: 180;
+  /* --hue-color: 340;  */
   /* --hue-color: 67; Yellow */
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -414,7 +414,7 @@ img {
 
 .qualification__tabs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: var(--h3-font-size);
 }
 
@@ -890,9 +890,6 @@ img {
   }
 
   .qualification__tabs{
-    justify-content: center;
+    justify-content: space-evenly;
   }
-
-
-
 }

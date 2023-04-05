@@ -819,7 +819,10 @@ img {
   }
 
   /* .portfolio__content */
-  .about__container,
+  .about__container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .skills__container,
   .contact__container,
   .footer__container {

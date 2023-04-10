@@ -60,7 +60,7 @@ tabs.forEach(tab => {
 
 // =================================== Portfolio ======================
 
-let swiper = new Swiper(".portfolio__container", {
+var swiper = new Swiper(".portfolio__container", {
   cssMode: true,
   loop : true,
   navigation: {
@@ -71,6 +71,9 @@ let swiper = new Swiper(".portfolio__container", {
     el: ".swiper-pagination",
     clickable : true
   },
+
+  mousewheel : true,
+  keyboard : true
 });
 
 

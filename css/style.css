@@ -591,8 +591,11 @@ img {
 /* ================================================  Portfolio  ============================================= */
 
 .portfolio__container {
-  overflow: initial;
-}
+    display: flex;
+   flex-wrap: wrap;
+    max-width: 1024px;
+
+  }
 
 .portfolio__content {
   padding: 0 1.5rem;
@@ -826,7 +829,8 @@ img {
 
   .skills__container,
   .contact__container,
-  .footer__container {
+  .footer__container,
+  .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -936,3 +940,5 @@ img {
     justify-content: space-evenly;
   }
 }
+
+

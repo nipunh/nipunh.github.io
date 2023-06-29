@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+:root {
+  --url: url("https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  --url1: url("https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+}
 
 a {
   text-decoration: none;
@@ -14,7 +18,7 @@ h1 {
   float: left;
   padding: 1rem;
   flex-grow: 1;
-  width: 33%;
+  width: 50%;
 }
 .card .menu-content {
   margin: 0;
@@ -34,14 +38,14 @@ h1 {
 .card .menu-content a {
   color: #fff;
 }
-.card .wrapper {
+.card .wrapper, .card .wrapper1 {
   background-color: #fff;
   min-height: 480px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
-.card .wrapper:hover .data {
+.card .wrapper:hover .data, .card .wrapper1:hover .data {
   transform: translateY(0);
 }
 .card .data {
@@ -76,8 +80,16 @@ h1 {
   transform: translateY(-60px);
 }
 .example-3 .wrapper {
-  background: url(https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) 30% 1% / cover no-repeat;
+  background: var(--url) left no-repeat , var(--url1) right no-repeat;
+  background-size: 240px, 240px, auto;
 }
+
+.example-3 .wrapper1 {
+  background-color:#333 ;
+  background: var(--url) 30% 1% no-repeat;
+  background-size: 480px auto;
+}
+
 .example-3 .date {
   position: absolute;
   top: 0;

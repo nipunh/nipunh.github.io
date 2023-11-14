@@ -126,7 +126,11 @@ img {
 /* ================================================REUSABLE CSS CLASESS============================================= */
 
 .section {
-  padding: 2rem 0 4rem;
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .section__title {

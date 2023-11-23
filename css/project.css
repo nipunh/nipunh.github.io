@@ -10,12 +10,20 @@
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
 }
 
 .project-title {
   margin: 1rem;
   color: black;
+}
+
+.project-title-back, .flip-card-back-close {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
 }
 
 .project-btn {
@@ -31,9 +39,26 @@
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
+
+.experience-content {
+  color: rgb(85, 85, 85);
+  font-weight: 200;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1project-title-backrem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.experience-content ul{
+  list-style-type: circle;
+  padding: 0;
+}
+
+
 
 .experience-details-container {
   display: flex;
@@ -57,15 +82,36 @@
   margin-top: 2rem;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
+
+.about-containers{
+  max-height: 575px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
 
-.about-containers,
-.about-details-container {
-  display: flex;
+@media (max-width: 800px) {
+  .about-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items in column layout */
+  }
+
+  .details-container {
+    min-height: auto; /* Adjust as needed */
+    margin-bottom: 1rem; /* Add some spacing between project containers */
+  }
+
+  .flip-card-back {
+    text-align: left; 
+    position: absolute;
+    top: 0;
+    left: 0; 
+  }
 }
+
 
 .about-pic {
   border-radius: 2rem;
@@ -91,6 +137,7 @@ article .icon {
   cursor: default;
 }
 .btn-container {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -145,3 +192,59 @@ article .icon {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.flip-card-front{
+  text-align: center;
+  /* position: absolute; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 0; /* Add this line */
+  left: 0; /* Add this line */
+}
+
+
+.flip-card-back {
+  position: absolute;
+  border-radius: 4rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 0.25; /* Add this line */
+  left: 0.25; /* Add this line */
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+  top: 0; /* Add this line */
+  left: 0; /* Add this line */
+}
+.flip-card-back-close {
+  position: absolute;
+  top: 0.5rem;
+  right:1rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+

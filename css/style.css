@@ -54,11 +54,13 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --big-font-size: 3.5rem;
+    --big-font-size: 2.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
   }
 }
+
+
 
 /*===== Margenes =====*/
 :root {
@@ -88,6 +90,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 }
 
 html {
@@ -102,10 +105,7 @@ body {
   color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -127,7 +127,7 @@ img {
 
 .section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 160vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -371,14 +371,48 @@ img {
   align-items: center;
 }
 
+.button-row {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color); /* Add your color */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  margin: 0.5rem; /* Adjust as needed */
+}
+
 .button--flex {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
+.button__icon {
+  margin-left: 0.5rem; /* Adjust as needed */
+}
+
+@media screen and (max-width: 767px) {
+  .button-row {
+    justify-content: center;
+  }
+
+  .button {
+    width: 100%; /* Make buttons full-width on small screens */
+  }
+}
+
+
 /* ================================================  About  ============================================= */
+/* ================================================ About ============================================= */
 .about__img {
-  width: 200px;
+  width: 100%; /* Adjust as needed */
+  max-width: 200px; /* Set a maximum width if necessary */
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
@@ -391,13 +425,20 @@ img {
 
 .about__info {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+  justify-content: center;
   margin-bottom: var(--mb-2-5);
+}
+
+.about__info > div {
+  text-align: center;
+  margin-bottom: 1rem; /* Adjust as needed */
 }
 
 .about__buttons {
   display: flex;
   justify-content: center;
+  margin-top: var(--mb-3); /* Adjust as needed */
 }
 
 .about__info-title {
@@ -413,8 +454,42 @@ img {
 .about__info-title,
 .about__info-name {
   display: block;
+}
+
+.section {
+  padding-top: 4vh;
+  height: auto; /* Adjust height as needed */
+  margin: 0 1rem; /* Adjust margins for smaller screens */
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section__title {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.section__title,
+.section__subtitle {
   text-align: center;
 }
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .about__info {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .about__img {
+    max-width: 100%;
+  }
+}
+
 
 /* ================================================  Qualification  ============================================= */
 
@@ -595,66 +670,123 @@ img {
 /* ================================================  Portfolio  ============================================= */
 
 .portfolio__container {
-    display: flex;
-   flex-wrap: wrap;
-    max-width: 1024px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
 
+.project-card{
+  border-radius: 1rem;
+  background: white;
+  border-radius: 3rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  border-color: rgb(180, 62%, 55%);
+  text-align: center;
+  /* height: 500px; */
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.project-description-content{
+  font-family: var(--body-font);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .portfolio__container{ 
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-.portfolio__content {
-  padding: 0 1.5rem;
+
+} 
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+ .container-tabs {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .tabs {
+	 display: flex;
+	 position: relative;
+	 background-color: #fff;
+	 box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+	 padding: 0.35rem;
+	 border-radius: 99px;
+}
+ .tabs * {
+	 z-index: 2;
+}
+ input[type="radio"] {
+	 display: none;
+}
+ .tab {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 34px;
+	 width: 300px;
+	 font-size: 1.25rem;
+	 font-weight: 500;
+	 border-radius: 99px;
+	 cursor: pointer;
+	 transition: color 0.15s ease-in;
 }
 
-.portfolio__img {
-  width: 256px;
-  border-radius: 0.5rem;
-  justify-self: center;
-}
-
-.portfolio__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-}
-
-.portfolio__description {
-  margin-bottom: var(--mb-0-75);
-}
-
-.portfolio__button:hover .button__icon {
-  transform: translateX(0.25rem);
-}
-
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-}
-
-.swiper-portfolio-icon {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.swiper-button-prev {
-  left: -0.5rem;
-}
-.swiper-button-next {
-  right: -0.5rem;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active {
+.glider {
+  position: absolute;
+  display: flex;
+  height: 34px;
+  width: 300px;
   background-color: var(--first-color);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
 }
 
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullets {
-  outline: none;
+ .notification {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 margin-left: 0.75rem;
+	 border-radius: 50%;
+	 background-color: var(--first-color);
+	 transition: 0.15s ease-in;
 }
+
+
+ input[type="radio"]:checked + label {
+	 color: #fff;
+}
+ input[type="radio"]:checked + label > .notification {
+	 background-color: var(--text-color-light);
+	 color: #fff;
+}
+ input[id="radio-1"]:checked ~ .glider {
+	 transform: translateX(0);
+}
+ input[id="radio-2"]:checked ~ .glider {
+	 transform: translateX(100%);
+}
+ input[id="radio-3"]:checked ~ .glider {
+	 transform: translateX(200%);
+}
+
+ @media (max-width: 700px) {
+	 .tabs {
+		 transform: scale(0.6);
+	}
+}
+ 
+
 
 /* ================================================  Contact Me  ============================================= */
 
@@ -833,9 +965,14 @@ img {
 
   .skills__container,
   .contact__container,
-  .footer__container,
-  .portfolio__container {
+  .footer__container
+  {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__container 
+  {
+    margin-top: 2rem;
   }
 
   .qualification__sections {
@@ -861,7 +998,7 @@ img {
   }
 
   .section__subtitle {
-    margin-bottom: 4rem;
+    margin-bottom:1rem;
   }
 
   .header {

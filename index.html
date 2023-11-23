@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Unicons -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -65,7 +61,6 @@
               </a>
             </li>
           </ul>
-
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
 
@@ -144,13 +139,15 @@
               experiemce, working in web technologies and design, delivering
               quality work.
               </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i>
-              </a>
-
+              <div class="button-row">
+                <a href="#contact" class="button button--flex">
+                  Contact Me <i class="uil uil-message button__icon"></i>
+                </a>
+              
                 <a download="" href="./assets/Nipun_Resume.pdf" class="button button--flex">
                   Download CV<i class="uil uil-download-alt button__icon"></i>
                 </a>
+              </div>
              
             </div>
           </div>
@@ -169,18 +166,13 @@
 
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
-
         <div class="about__container container grid">
-          <!-- <img src="./img/about.png" alt="" class="about__img" /> -->
-
           <div class="about__data">
             <p class="about__description">
               Software Engineer with experience in developing full-stack web applications, 
               proven track record of collaborating with teams to develop, enhance and troubleshoot 
               applications. Proficient in modern Javascript frameworks such as React, Node, and Redux. 
               Possesses a solid foundation in algorithm design, programming, and problem-solving.
-              <!--  -->
             </p>
 
             <div class="about__info">
@@ -208,302 +200,13 @@
                 >
               </div>
             </div>
-<!-- 
-            <div class="about__buttons">
-              
-            </div> -->
           </div>
         </div>
       </section>
 
-            <!--============================== Portfolio ===========================-->
-            <section class="portfolio section" id="portfolio">
-              <h1 class="section__title">Projects</h1>
-              <p class="section__subtitle">Browse My Recent</p>
-      
-              <div class="experience-details-container">
-                <div class="about-containers">
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img
-                        src="./assets/resseller.png"
-                        alt="Project 1"
-                        class="project-img"
-                      />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Reselling Platform</h2>
-                    <div class="btn-container">
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Github
-                      </button>
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Live Demo
-                      </button>
-                    </div>
-                  </div>
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img
-                        src="./assets/expense.png"
-                        alt="Project 2"
-                        class="project-img"
-                      />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Expense Tracker</h2>
-                    <div class="btn-container">
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Github
-                      </button>
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Live Demo
-                      </button>
-                    </div>
-                  </div>
-                  <div class="details-container color-container">
-                    <div class="article-container">
-                      <img
-                        src="./assets/project-1.png"
-                        alt="Project 3"
-                        class="project-img"
-                      />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Github
-                      </button>
-                      <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/'"
-                      >
-                        Live Demo
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-      
-      
+       <!-- /* ================================================  Qualification  ============================================= */ -->
 
-      <!-- /* ================================================  Skills  ============================================= */ -->
-
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
-
-        <div class="skills__container container grid">
-
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-globe skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Web Development</h1>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-
-            </div>
-            <div class="skills__list" id="grid">
-              <div class="list">
-                <label>Html</label>
-                <i class="fab fa-html5"></i>
-              </div>
-  
-              <div class="list">
-                <label>Css</label>
-                <i class="fab fa-css3"></i>
-              </div>
-  
-              <div class="list">
-                <label>Java Script</label>
-                <i class="fab fa-js"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-server-network skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Frameworks</h1>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-
-            </div>
-            <div class="skills__list" id="grid">
-              <div class="list">
-                <label>Node JS</label>
-                <i class="fab fa-node-js"></i>
-              </div>
-  
-              <div class="list">
-                <label>React</label>
-                <i class="fab fa-react"></i>
-              </div>
-  
-              <div class="list">
-                <label>React Native</label>
-                <i class="fas fa-atom"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-swatchbook skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Software Engineering</h1>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-
-            </div>
-            <div class="skills__list" id="grid">
-              <div class="list">
-                <label>C++</label>
-                <i class="fas fa-code"></i>
-              </div>
-  
-              <div class="list">
-                <label>SQL</label>
-                <i class="fas fa-table"></i>
-              </div>
-  
-              <div class="list">
-                <label>Data Structure</label>
-                <i class="fas fa-project-diagram"></i>
-              </div>
-  
-              <div class="list">
-                <label>ALgorithms</label>
-                <i class="fas fa-square-root-alt"></i>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-swatchbook skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title">Others</h1>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-
-            </div>
-            <div class="skills__list" id="grid">
-              <div class="list">
-                <label>Git</label>
-                <i class="fab fa-git-alt"></i>
-              </div>
-  
-              <div class="list">
-                <label>Excel, Word, Power Point</label>
-                <i class="far fa-file-word"></i>
-              </div>
-  
-              <div class="list">
-                <label>Search Engine Optimisation</label>
-                <i class="fas fa-search"></i>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- <div class="set">
-            <span class="""><i class="uil uil-globe"></i></span>
-            <header>Web Development</header>
-            <div class="list">
-              <label>Html</label>
-              <i class="fab fa-html5"></i>
-            </div>
-
-            <div class="list">
-              <label>Css</label>
-              <i class="fab fa-css3"></i>
-            </div>
-
-            <div class="list">
-              <label>Java Script</label>
-              <i class="fab fa-js"></i>
-            </div>
-
-          </div>
-
-          <div class="set">
-            <span class="""><i class="fas fa-tools"></i></span>
-            <header>Framework</header>
-            <div class="list">
-              <label>Node JS</label>
-              <i class="fab fa-node-js"></i>
-            </div>
-
-            <div class="list">
-              <label>React</label>
-              <i class="fab fa-react"></i>
-            </div>
-
-            <div class="list">
-              <label>React Native</label>
-              <i class="fas fa-atom"></i>
-            </div>
-            
-          </div>
-
-          <div class="set">
-            <span class="""><i class="fas fa-laptop-code"></i></span>
-            <header>Others</header>
-            <div class="list">
-              <label>C++</label>
-              <i class="fas fa-code"></i>
-            </div>
-
-            <div class="list">
-              <label>SQL</label>
-              <i class="fas fa-table"></i>
-            </div>
-
-            <div class="list">
-              <label>Data Structure</label>
-              <i class="fas fa-project-diagram"></i>
-            </div>
-
-            <div class="list">
-              <label>ALgorithms</label>
-              <i class="fas fa-square-root-alt"></i>
-            </div>
-            
-          </div> -->
-        </div>
-
-      </section>
-
-
-      <!-- /* ================================================  Qualification  ============================================= */ -->
-
-      <section class="qualification section" id="qualification">
+       <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
 
@@ -638,263 +341,526 @@
       </section>
 
 
-
-
-
-      <!-- <section class="portfolio section" id="portfolio"> 
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Recent Projects</span>
-
-        <div class="portfolio__container container">
-
-          <div class="example-3 card">
-            <div class="wrapper"  style='--url: url("https://github.com/nipunh/reseller/assets/26524611/0ace1a5c-2767-405e-8383-b0245c6bd85c"); --url1 : url("https://github.com/nipunh/reseller/assets/26524611/8fd1ea05-28ed-4ab5-bd38-59440dcafef9")' >
-              <ul class="menu-content">
-                  <li><a><i class="fab fa-react"></i></a></li>
-              </ul>
-              <div class="data">
-                <div class="content">
-                  <h1 class="title"><a href="https://github.com/nipunh/reseller" target="_blank">Reseller Application</a></h1>
-                  <p class="text">Developed a mobile application using React Native that revolutionizes the buying and selling of used products. The application provides a platform for users to register, interact, buy, and sell various items with ease. </p>
+            <!--============================== Portfolio ===========================-->
+      
+            <section class="portfolio section" id="portfolio">
+              <h1 class="section__title">Projects</h1>
+              <p class="section__subtitle">Browse My Recent</p>
+              
+              <div class="container-tabs">
+                <div class="tabs">
+                  <input type="radio" onclick="changeSection('web_development')" id="radio-1" name="tabs" checked />
+                  <label class="tab" for="radio-1">Web Application
+                    <!-- <span class="notification">2</span> -->
+                  </label>
+                  <input type="radio" onclick="changeSection('mobile_development')" id="radio-2" name="tabs" />
+                  <label class="tab"  for="radio-2">Mobile Application</label>
+                  <input type="radio" onclick="changeSection('ml_development')" id="radio-3" name="tabs" />
+                  <label class="tab" for="radio-3">Machine Learning & AI</label>
+                  <span class="glider"></span>
                 </div>
               </div>
-            </div>
-          </div>
-  
-  
-          <div class="example-3 card">
-            <div class="wrapper"  style='--url: url("https://github.com/nipunh/react-native-expense-tracker/assets/26524611/9a9498f5-597a-47e8-9a66-1b3517fa5756"); --url1 : url("https://github.com/nipunh/react-native-expense-tracker/assets/26524611/72f1e86f-4a6c-4fb8-9cbd-435bdd6aef9a")' >
-  
-              <ul class="menu-content">
-                  <li><a><i class="fab fa-react"></i></a></li>
+
+
+
+
+                <div class="portfolio__container" id ="web_development" >
+                  <div class="project-card color-container flip-card" data-card="proj1">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/cryptoTracker.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Cryptocurrency Tracker</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/cryptotracker"> 
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj1')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj1')">X</button>
+                        
+                        <div class="experience-content">
+                          <h2 class="project-title-back"> Reselling Platform</h2>
+                          <ul class="experience-content ul">
+                            <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   
-              </ul>
-              <div class="data">
-                <div class="content">
-                  <h1 class="title"><a href="https://github.com/nipunh/react-native-expense-tracker" target="_blank">Expense Tracker</a></h1>
-                  <p class="text">Designed and Developed a React Native and Firebase based expense tracker With features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.  </p>
+                  <div class="project-card color-container flip-card" data-card="proj2">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/expense.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj2')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj2')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Expense Tracker</h2>
+                          <ul>
+                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="project-card color-container flip-card" data-card="proj3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./img/fooddelivery.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Restaurant App</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj3')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj3')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Expense Tracker</h2>
+                          <ul>
+                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        <div class="example-3 card">
-          <div class="wrapper1"  style='--url: url("https://github.com/nipunh/cryptotracker/assets/26524611/011f41fd-72fb-4a35-aaf9-b0b7186e0ea4");' >
-            <ul class="menu-content">
-                <li><a ><i class="fab fa-react"></i></a></li>
-                <li><a ><i class="fab fa-html5"></i></a></li>
-                <li><a ><i class="fab fa-css3-alt"></i></a></li>
-                <li><a ><i class="fab fa-js"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/nipunh/cryptotracker" target="_blank">Crypto Currency Tracker</a></h1>
-                <p class="text">
-                  The CryptoCurrency Web Application is a robust and user-friendly platform designed to 
-                  provide users with a seamless experience in viewing and analyzing various cryptocurrencies. 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
+                <div class="portfolio__container" id ="mobile_development" style="display:none">
+                  <div class="project-card color-container flip-card" data-card="proj1">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/resseller.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Reselling Platform</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj1')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj1')">X</button>
+                        
+                        <div class="experience-content">
+                          <h2 class="project-title-back"> Reselling Platform</h2>
+                          <ul class="experience-content ul">
+                            <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="project-card color-container flip-card" data-card="proj2">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/expense.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj2')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj2')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Expense Tracker</h2>
+                          <ul>
+                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="project-card color-container flip-card" data-card="proj3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./img/fooddelivery.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Restaurant App</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj3')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj3')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Expense Tracker</h2>
+                          <ul>
+                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio__container" id ="ml_development" style="display:none">
+                    <div class="project-card color-container flip-card" data-card="proj7">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./assets/resseller.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">ML Reselling Platform</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="https://github.com/nipunh/reseller"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj7')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj7')">X</button>
+                          
+                          <div class="experience-content">
+                            <h2 class="experience-sub-title-back project-title">Reselling Platform</h2>
+                            <ul>
+                              <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="project-card color-container flip-card" data-card="proj8">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./assets/expense.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="https://github.com/nipunh/reseller"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj8')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj8')">X</button>
+                          
+                          
+                          <div class="experience-content">
+                            <ul>
+                              <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <div class="project-card color-container flip-card" data-card="proj9">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./img/fooddelivery.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">Restaurant App</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="https://github.com/nipunh/reseller"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj9')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj9')">X</button>
+                          
+                          <div class="experience-content">
+                            <ul>
+                              <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+
+
+
+
+                </div>
+              </section>
+      
+          
+      
       
 
+      <!-- /* ================================================  Skills  ============================================= */ -->
 
-        <div class="example-3 card">
-          <div class="wrapper">
-            <ul class="menu-content">
-                <li><a ><i class="fab fa-python"></i></a></li>
-                <li><a ><i class="fab fa-steam"></i></a></li>
-                <li><a ><i class="fab fa-kaggle"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/VishanthSurresh/Steam-Game-Recommendation/tree/main" target="_blank">Steam Game Recommendation</a></h1>
-                <p class="text">Devised a model to recommend games based on user behavior by applying preprocessing methods and performing exploratory data analysis on the dataset using PySpark</p>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container grid">
+
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-globe skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Web Development</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Html</label>
+                <i class="fab fa-html5"></i>
+              </div>
+  
+              <div class="list">
+                <label>Css</label>
+                <i class="fab fa-css3"></i>
+              </div>
+  
+              <div class="list">
+                <label>JavaScript</label>
+                <i class="fab fa-js"></i>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="example-3 card">
-          <div class="wrapper">
-            
-            <ul class="menu-content">
-                <li><a ><i class="fab fa-react"></i></a></li>
-                <li><a ><i class="fab fa-node"></i></a></li>
-                <li><a ><i class="fab fa-js"></i></a></li>
-                <li><a ><i class="fab fa-stripe"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/nipunh/Ecommerce-Web-Application" target="_blank">E-commerce platform</a></h1>
-                <p class="text"> Intuitive and user-friendly web application to enable local businesses to quickly register and sell their products online.
-                </p>
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frameworks</h1>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="example-3 card">
-          <div class="wrapper">
-           
-            <ul class="menu-content">
-                <li><a><i class="fab fa-python"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/nipunh/Covid-X-Ray-" target="_blank">COVID-Net</a></h1>
-                <p class="text">A deep convolutional neural network developed for detecting COVID-19 cases from chest radiography pictures. The chest radiography dataset used to train COVID-Net, contains over 16,000 chest radiography images from 13,000 patient. 
-                </p>
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Node JS</label>
+                <i class="fab fa-node-js"></i>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="example-3 card">
-          <div class="wrapper">
-            
-            <ul class="menu-content">
-                <li><a><i class="fab fa-java"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/nipunh/Movies-Review-SpringBoot-React" target="_blank">Movie Review Application</a></h1>
-                <p class="text">Trained a Convolutional Neural Network model to analyze face images and detect whether a person is wearing a mask or not, the type of mask being worn, and whether the mask is worn correctly. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="example-3 card">
-          <div class="wrapper">
-            <ul class="menu-content">
-                <li><a><i class="fab fa-python"></i></a></li>
-            </ul>
-            <div class="data">
-              <div class="content">
-                <h1 class="title"><a href="https://github.com/amritsinghcse/MaskNet" target="_blank">AI Face Mask Detection</a></h1>
-                <p class="text">Trained a Convolutional Neural Network model to analyze face images and detect whether a person is wearing a mask or not, the type of mask being worn, and whether the mask is worn correctly. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        </div>
-      </div> 
-      
-    </section> -->
-
-       
-
-      <!-- <div class="portfolio__container container swiper">
-        <div class="swiper-wrapper">  -->
-          <!--============================== Project 1 ===========================-->
-              <!-- <div class="portfolio__content grid swiper-slide">
-                <img src="./img/eccomerce.png" alt="" class="portfolio__img">
-                
-                <div class="portfolio__data">
-                  <h3 class="portfolio__title">Ecommerce Website</h3>
-                  <p class="portfolio__description">
-                    Web application for local businesses to register themselves and sell products.
-                    Graphical insights using Chart JS library for analyzing sales, revenue and user retention.
-                    Integrated razorpay payment gateway for faster and safer transactions.
-                    Tecbhnologies Used : Node JS, MongoDB, React, Express JS, Amazon Web Services(AWS).
-                  </p>
-                  <a href="https://github.com/nipunh/EcoBackend" class="button button--flex button--small portfolio__button">
-                    Backend <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                  <a href="https://github.com/nipunh/EcoFront" class="button button--flex button--small portfolio__button">
-                    Frontend <i class="uil uil-arrow-right button__icon"></i>
-                  </a>
-                </div>
+              <!-- <div class="list">
+                <label>Spring Boot</label>
+                <i class="fab fa-gears"></i>
               </div> -->
-
-          <!--============================== Project 3 ===========================-->
-          <!-- <div class="portfolio__content grid swiper-slide">
-            <img src="./img/crypto.png" alt="" class="portfolio__img">
-            
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Crypto Tracker</h3>
-              <p class="portfolio__description">
-                Designed and developed a full-stack web application using React. To manage the application's state, I implemented Redux Toolkit, a powerful toolset for managing state in a predictable and efficient way.
-
-To create an appealing and user-friendly interface, I utilized Ant Design, a comprehensive UI design system that provides a wide range of components and patterns for building responsive and accessible web applications. In addition, I used Chart.js, a JavaScript library for data visualization, to create dynamic and interactive charts that allow users to easily understand complex data.
-
-To ensure that the application provides up-to-date information, I implemented data fetching from multiple sources using RapidAPI, a platform that provides a range of APIs for accessing data from various sources. This allowed the application to provide real-time information to users, making it a valuable resource for data-driven decision-making.
-
-
-              </p>
-              <a href="https://github.com/amritsinghcse/MaskNet" class="button button--flex button--small portfolio__button">
-                Github <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-
-          <!--============================== Project 2 ===========================-->
-          <!-- <div class="portfolio__content grid swiper-slide">
-            <img src="./img/work1.jpg" alt="" class="portfolio__img">
-            
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">AI Face mask detection</h3>
-              <p class="portfolio__description">
-                Trained a Convolutional Neural Network model to analyze face images and detect whether a person is wearing a mask or not, the type of mask being worn, and whether the mask is worn correctly. 
-                Achieved an accuracy of 73.4% on the validation model. </p>
-              <a href="https://github.com/nipunh/Virtual-Painter" class="button button--flex button--small portfolio__button">
-                Github <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-          <!--============================== Project 2 ===========================-->
-          <!-- <div class="portfolio__content grid swiper-slide">
-            <img src="./img/work1.jpg" alt="" class="portfolio__img">
-            
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Virtual Painter</h3>
-              <p class="portfolio__description">
-              Virtual Painter with Hand Gesture is a project based on OpenCV technology that allows users to detect their hands and fingers in real-time. The project leverages the power of the Mediapipe and NumPy libraries to create a virtual canvas where users can use their index finger to draw, and their index and middle fingers to select different colors and an eraser.
-              With Virtual Painter with Hand Gesture, users can immerse themselves in a new and exciting way of drawing, without the need for physical tools like brushes or pencils. The project utilizes advanced image processing techniques to track hand movements and identify specific gestures made by the user. This makes it possible to create a highly responsive and accurate virtual painting experience that mimics the real-world experience of drawing.
-              </p>
-              <a href="https://github.com/nipunh/Virtual-Painter" class="button button--flex button--small portfolio__button">
-                Github <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div> -->
-
-
-          <!--============================== Project 4 ===========================-->
-          <!-- <div class="portfolio__content grid swiper-slide">
-            <img src="./img/work4.jpg" alt="" class="portfolio__img">
-            
-            <div class="portfolio__data">
-              <h3 class="portfolio__title">Minutes of Meeting</h3>
-              <p class="portfolio__description">
-                Devised a deep learning model and built a user-friendly Flask-based web application which successfully generates meeting of minutes insights from audio file. 
-Trained the model using LSTM algorithm to summarize meetings using Python libraries such as Vader Sentiment Analyzer, spaCy, Matplotlib and NLTK; Natural Language processing and IBM cloud technology: Speech-to-Text conversion. 
-Extracted and represented valuable insights which includes positive and negative word clouds, topics discussed, confidence comparison, and sentiment comparison using Matplotlib python library. 
-</p>
-              <a href="#" class="button button--flex button--small portfolio__button">
-                Under Construction <i class="uil uil-arrow-right button__icon"></i>
-              </a>
+  
+              <div class="list">
+                <label>React</label>
+                <i class="fab fa-react"></i>
+              </div>
+  
+              <div class="list">
+                <label>React Native</label>
+                <i class="fas fa-atom"></i>
+              </div>
             </div>
           </div>
-        
-        </div>
 
-        <div class="swiper-button-next">
-          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-        </div>
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
 
-        <div class="swiper-button-prev">
-          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-        </div>
+              <div>
+                <h1 class="skills__title">Software Engineering</h1>
+              </div>
 
-         <div class="swiper-pagination"></div> -->
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Java, Python</label>
+                <i class="fas fa-code"></i>
+              </div>
+  
+              <div class="list">
+                <label>SQL</label>
+                <i class="fas fa-table"></i>
+              </div>
+  
+              <div class="list">
+                <label>Data Structure</label>
+                <i class="fas fa-project-diagram"></i>
+              </div>
+  
+              <div class="list">
+                <label>ALgorithms</label>
+                <i class="fas fa-square-root-alt"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Others</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+            <div class="skills__list" id="grid">
+              <div class="list">
+                <label>Git</label>
+                <i class="fab fa-git-alt"></i>
+              </div>
+  
+              <div class="list">
+                <label>Excel, Word, Power Point</label>
+                <i class="far fa-file-word"></i>
+              </div>
+  
+              <div class="list">
+                <label>Search Engine Optimisation</label>
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          </section>
         
          
     
@@ -970,7 +936,7 @@ Extracted and represented valuable insights which includes positive and negative
 
       <!--================================ Footer ===================================-->
 
-      <!-- <section id="contact"> -->
+
       <footer class="footer section" id="footer">
         <div class="footer__bg">
           <div class="footer__container container grid">
@@ -1003,7 +969,7 @@ Extracted and represented valuable insights which includes positive and negative
 
         </div>
       </footer>
-    <!-- </section> -->
+
 
 
     </main>

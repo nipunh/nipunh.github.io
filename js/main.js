@@ -129,3 +129,23 @@ function scrollHeader(){
   if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+function flipCard(cardId) {
+  const flipCardInner = document.querySelector(`[data-card="${cardId}"] .flip-card-inner`);
+  flipCardInner.style.transform = 'rotateY(180deg)';
+}
+
+function flipToFront(cardId) {
+  const flipCardInner = document.querySelector(`[data-card="${cardId}"] .flip-card-inner`);
+  flipCardInner.style.transform = 'rotateY(0deg)';
+}
+
+// ===================================== Change Project Section =============================================
+function changeSection(sectionName) {
+  var i;
+  var x = document.getElementsByClassName("portfolio__container");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(sectionName).style.removeProperty("display");
+}

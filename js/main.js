@@ -149,3 +149,4 @@ function changeSection(sectionName) {
   }
   document.getElementById(sectionName).style.removeProperty("display");
 }
+

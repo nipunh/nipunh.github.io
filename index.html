@@ -341,439 +341,9 @@
       </section>
 
 
-            <!--============================== Portfolio ===========================-->
-      
-            <section class="portfolio section" id="portfolio">
-              <h1 class="section__title">Projects</h1>
-              <p class="section__subtitle">Browse My Recent</p>
-              
-              <div class="container-tabs">
-                <div class="tabs">
-                  <input type="radio" onclick="changeSection('web_development')" id="radio-1" name="tabs" checked />
-                  <label class="tab" for="radio-1">Web Application
-                    <!-- <span class="notification">2</span> -->
-                  </label>
-                  <input type="radio" onclick="changeSection('mobile_development')" id="radio-2" name="tabs" />
-                  <label class="tab"  for="radio-2">Mobile Application</label>
-                  <input type="radio" onclick="changeSection('ml_development')" id="radio-3" name="tabs" />
-                  <label class="tab" for="radio-3">Machine Learning & AI</label>
-                  <span class="glider"></span>
-                </div>
-              </div>
+       <!-- /* ================================================  Skills  ============================================= */ -->
 
-
-
-
-                <div class="portfolio__container" id ="web_development" >
-                  <div class="project-card color-container flip-card" data-card="proj1">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/cryptoTracker.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Cryptocurrency Tracker</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="window.open('https://main--cerulean-tartufo-01ec5f.netlify.app/','_blank')"
-                          
-                       
-                          >
-                          Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj1')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj1')">X</button>
-                        
-                        <div class="experience-content">
-                          <h2 class="project-title-back">Cryptocurrency Tracker</h2>
-                          <ul class="experience-content ul">
-                            <li>Constructed a web application using React to monitor prices and performance of 4000+ cryptocurrencies in real-time.</li>
-                            <li>Utilized Redux Toolkit for streamlined state management and integrated 2 APIs for real-time data-driven decision-making.</li>
-                            <li>Leveraged Chart.js features to visualize historical data using 8+ graphs, and Jest for unit testing.</li>  
-                          </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="project-card color-container flip-card" data-card="proj2">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/expense.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Ecommerce Web App</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="window.open('https://github.com/nipunh/Ecommerce-Web-Application')"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj2')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj2')">X</button>
-                        <div class="experience-content">
-                          <h2 class="project-title-back">Ecommerce Web Application</h2>
-                          <ul>
-                            <li>Conceptualized and engineered a full-stack e-commerce web application using cutting-edge Javascript frameworks.</li>
-                            <li>Developed REST API endpoints with Nodejs, Express, and MongoDB, increasing efficient data management.</li>
-                            <li>Orchestrated integration of third-party APIs, like Google Maps, twilio, and Stripe with React to elevate the functionalities.</li>
-                          </ul>
-                        </div>
-                    
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="project-card color-container flip-card" data-card="proj3">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/jobportal.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Job Portal</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="window.open('https://github.com/nipunh/Job-Search-Platform')"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj3')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj3')">X</button>
-                        <div class="experience-content">
-                          <h2 class="project-title-back">Job Portal</h2>
-                          <ul>
-                            <li>Created an full stack user-friendly web application for job seekers, streamlining job searching and posting process.</li>
-                            <li>Leveraged Angular for the frontend and employing Spring Boot and MongoDB for the backend to expedite development.</li>
-                            <li>Effectively communicated project requirements and progress in a team of 6 members and maintained GitHub Wiki.</li>
-                            <li>Established JWT token-based authentication and authorization for enhanced user access control.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="project-card color-container flip-card" data-card="proj10">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/jobportal.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">3D Tshirt Design</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="window.open('https://github.com/nipunh/Job-Search-Platform')"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj10')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj10')">X</button>
-                        <div class="experience-content">
-                          <h2 class="project-title-back">3D Tshirt Design</h2>
-                          <ul>
-                            <li>Created an full stack user-friendly web application for job seekers, streamlining job searching and posting process.</li>
-                            <li>Leveraged Angular for the frontend and employing Spring Boot and MongoDB for the backend to expedite development.</li>
-                            <li>Effectively communicated project requirements and progress in a team of 6 members and maintained GitHub Wiki.</li>
-                            <li>Established JWT token-based authentication and authorization for enhanced user access control.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio__container" id ="mobile_development" style="display:none">
-                  <div class="project-card color-container flip-card" data-card="proj1">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/resseller.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Reselling Platform</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="https://github.com/nipunh/reseller"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj1')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj1')">X</button>
-                        
-                        <div class="experience-content">
-                          <h2 class="project-title-back"> Reselling Platform</h2>
-                          <ul class="experience-content ul">
-                            <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="project-card color-container flip-card" data-card="proj2">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/expense.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Expense Tracker</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="https://github.com/nipunh/reseller"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj2')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj2')">X</button>
-                        <div class="experience-content">
-                          <h2 class="project-title-back">Expense Tracker</h2>
-                          <ul>
-                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
-                          </ul>
-                        </div>
-                    
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="project-card color-container flip-card" data-card="proj3">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                          <img
-                            src="./assets/fooddelivery.png"
-                            alt="Project 1"
-                            class="project-img"
-                          />
-                      
-                      <h2 class="experience-sub-title project-title">Restaurant App</h2>
-                      <div class="btn-container">
-                        <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="https://github.com/nipunh/reseller"
-                          >
-                      Github
-                        </button>
-                        <button
-                          class="btn btn-color-2 "
-                          onclick="flipCard('proj3')"
-                        >
-                          Description
-                        </button>
-                      </div>
-                      </div>
-                      <div class="flip-card-back">
-                        <button class="flip-card-back-close" onclick="flipToFront('proj3')">X</button>
-                        <div class="experience-content">
-                          <h2 class="project-title-back">Expense Tracker</h2>
-                          <ul>
-                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio__container" id ="ml_development" style="display:none">
-                    <div class="project-card color-container flip-card" data-card="proj7">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                              src="./assets/resseller.png"
-                              alt="Project 1"
-                              class="project-img"
-                            />
-                        
-                        <h2 class="experience-sub-title project-title">AI Face Mask</h2>
-                        <div class="btn-container">
-                          <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="https://github.com/nipunh/reseller"
-                            >
-                        Github
-                          </button>
-                          <button
-                            class="btn btn-color-2 "
-                            onclick="flipCard('proj7')"
-                          >
-                            Description
-                          </button>
-                        </div>
-                        </div>
-                        <div class="flip-card-back">
-                          <button class="flip-card-back-close" onclick="flipToFront('proj7')">X</button>
-                          
-                          <div class="experience-content">
-                            <h2 class="experience-sub-title-back project-title">Reselling Platform</h2>
-                            <ul>
-                              <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                    <div class="project-card color-container flip-card" data-card="proj8">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                              src="./assets/expense.png"
-                              alt="Project 1"
-                              class="project-img"
-                            />
-                        
-                        <h2 class="experience-sub-title project-title">Expense Tracker</h2>
-                        <div class="btn-container">
-                          <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="https://github.com/nipunh/reseller"
-                            >
-                        Github
-                          </button>
-                          <button
-                            class="btn btn-color-2 "
-                            onclick="flipCard('proj8')"
-                          >
-                            Description
-                          </button>
-                        </div>
-                        </div>
-                        <div class="flip-card-back">
-                          <button class="flip-card-back-close" onclick="flipToFront('proj8')">X</button>
-                          
-                          
-                          <div class="experience-content">
-                            <ul>
-                              <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                      
-                    <div class="project-card color-container flip-card" data-card="proj9">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                              src="./img/fooddelivery.png"
-                              alt="Project 1"
-                              class="project-img"
-                            />
-                        
-                        <h2 class="experience-sub-title project-title">Restaurant App</h2>
-                        <div class="btn-container">
-                          <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="https://github.com/nipunh/reseller"
-                            >
-                        Github
-                          </button>
-                          <button
-                            class="btn btn-color-2 "
-                            onclick="flipCard('proj9')"
-                          >
-                            Description
-                          </button>
-                        </div>
-                        </div>
-                        <div class="flip-card-back">
-                          <button class="flip-card-back-close" onclick="flipToFront('proj9')">X</button>
-                          
-                          <div class="experience-content">
-                            <ul>
-                              <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-
-                </div>
-              </section>
-      
-          
-      
-      
-
-      <!-- /* ================================================  Skills  ============================================= */ -->
-
-      <section class="skills section" id="skills">
+       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
@@ -910,6 +480,461 @@
           </section>
         
          
+
+            <!--============================== Portfolio ===========================-->
+      
+            <section class="portfolio section" id="portfolio">
+              <h1 class="section__title">Projects</h1>
+              <p class="section__subtitle">Browse My Recent</p>
+              
+              <div class="container-tabs">
+                <div class="tabs">
+                  <input type="radio" onclick="changeSection('web_development')" id="radio-1" name="tabs" checked />
+                  <label class="tab" for="radio-1">Web Application</label>
+                    <!-- <span class="notification">2</span> -->
+                  <input type="radio" onclick="changeSection('mobile_development')" id="radio-2" name="tabs" />
+                  <label class="tab"  for="radio-2">Mobile Application</label>
+                  <input type="radio" onclick="changeSection('ml_development')" id="radio-3" name="tabs" />
+                  <label class="tab" for="radio-3">Machine Learning & AI</label>
+                  <span class="glider"></span>
+                </div>
+              </div>
+
+
+                <div class="portfolio__container" id ="web_development" >
+                  <div class="project-card color-container flip-card" data-card="proj1">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/cryptoTracker.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Cryptocurrency Tracker</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="window.open('https://main--cerulean-tartufo-01ec5f.netlify.app/','_blank')"
+                          >
+                          Live Demo
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj1')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj1')">X</button>
+                        
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Cryptocurrency Tracker</h2>
+                          <ul class="experience-content ul">
+                            <li>Constructed a web application using React to monitor prices and performance of 4000+ cryptocurrencies in real-time.</li>
+                            <li>Utilized Redux Toolkit for streamlined state management and integrated 2 APIs for real-time data-driven decision-making.</li>
+                            <li>Leveraged Chart.js features to visualize historical data using 8+ graphs, and Jest for unit testing.</li>  
+                          </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    
+                  <div class="project-card color-container flip-card" data-card="proj3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/jobportal.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Job Portal</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="window.open('https://github.com/nipunh/Job-Search-Platform')"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj3')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj3')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Job Portal</h2>
+                          <ul>
+                            <li>Created an full stack user-friendly web application for job seekers, streamlining job searching and posting process.</li>
+                            <li>Leveraged Angular for the frontend and employing Spring Boot and MongoDB for the backend to expedite development.</li>
+                            <li>Effectively communicated project requirements and progress in a team of 6 members and maintained GitHub Wiki.</li>
+                            <li>Established JWT token-based authentication and authorization for enhanced user access control.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                                    
+                  <div class="project-card color-container flip-card" data-card="proj2">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/underconstruction.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Ecommerce Web App</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="window.open('https://github.com/nipunh/Ecommerce-Web-Application')"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj2')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj2')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Ecommerce Web Application</h2>
+                          <ul>
+                            <li>Conceptualized and engineered a full-stack e-commerce web application using cutting-edge Javascript frameworks.</li>
+                            <li>Developed REST API endpoints with Nodejs, Express, and MongoDB, increasing efficient data management.</li>
+                            <li>Orchestrated integration of third-party APIs, like Google Maps, twilio, and Stripe with React to elevate the functionalities.</li>
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card color-container flip-card" data-card="proj10">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/underconstruction.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">3D Tshirt Design</h2>
+                      <div class="btn-container">
+                        <!-- <button
+                          class="btn btn-color-2 project-btn"
+                           onclick="window.open('https://github.com/nipunh/Job-Search-Platform')"
+                          >
+                      Github
+                        </button> -->
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj10')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj10')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">3D Tshirt Design</h2>
+                          <ul>
+                            <li>Developed an immersive and visually stunning ThreeJS-powered 3D product website with integrated artificial intelligence features.</li>
+<li>Leveraged DALLE AI (OpenAI API)  to generate and utilize images, adding a unique and dynamic element to the websites.</li>
+<li>Employed TailwindCSS for efficient utility-first CSS styling, ensuring a responsive and visually appealing design across devices.</li>
+
+                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio__container" id ="mobile_development" style="display:none">
+                  <div class="project-card color-container flip-card" data-card="proj4">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/resseller.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Reselling Platform</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="window.open('https://github.com/nipunh/reseller')"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj4')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj4')">X</button>
+                        
+                        <div class="experience-content">
+                          <h2 class="project-title-back"> Reselling Platform</h2>
+                          <ul class="experience-content ul">
+                            <li>Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="project-card color-container flip-card" data-card="proj5">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/expense.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="window.open('https://github.com/nipunh/react-native-expense-tracker')"
+                          >
+                      Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj5')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj5')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Expense Tracker</h2>
+                          <ul>
+                            <li>Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits.
+                          </ul>
+                        </div>
+                    
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="project-card color-container flip-card" data-card="proj6">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img
+                            src="./assets/fooddelivery.png"
+                            alt="Project 1"
+                            class="project-img"
+                          />
+                      
+                      <h2 class="experience-sub-title project-title">Restaurant App</h2>
+                      <div class="btn-container">
+                        <!-- <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="https://github.com/nipunh/reseller"
+                          >
+                      Github
+                        </button> -->
+                        <button
+                          class="btn btn-color-2 "
+                          onclick="flipCard('proj6')"
+                        >
+                          Description
+                        </button>
+                      </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <button class="flip-card-back-close" onclick="flipToFront('proj6')">X</button>
+                        <div class="experience-content">
+                          <h2 class="project-title-back">Restaurant App</h2>
+                          <ul>
+                            <li>Mobile application for user to browse restaurant menus, customize orders, and place orders.
+                                 Utilized device location to suggest nearby restaurants allowing users to search for restaurants by distance.
+                            </li>
+                            <li>
+                              Developed a real-time chat feature using Flutter Streams and firebase firestore for communication with restaurant staff.
+                            </li>
+                            <li>
+                              Offered table reservations and utilized notifications and reminders to keep users updated on reservations
+                            </li>
+                            <li>
+                              Implemented the BLoC architecture to integrate the Stripe payment gateway supporting various payment methods.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio__container" id ="ml_development" style="display:none">
+                    <div class="project-card color-container flip-card" data-card="proj7">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./assets/underconstruction.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">AI Face Mask</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/nipunh/MaskNet')"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj7')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj7')">X</button>
+                          
+                          <div class="experience-content">
+                            <h2 class="project-title-back">AI Face Mask</h2>
+                            <ul>
+                              <li>
+                                Trained a Convolutional Neural Network model to analyze face images and detect whether a person is wearing a mask or not, the type of mask being worn, and whether the mask is worn correctly.
+                              </li>
+                              <li>
+                                Evaluated the model by measuring accuracy and precision using Scikit Learn and identified the bias that affects the model’s performance. Achieved an accuracy of 73.4% on the validation model.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="project-card color-container flip-card" data-card="proj8">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./assets/underconstruction.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/VishanthSurresh/Steam-Game-Recommendation/tree/main')"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj8')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj8')">X</button>
+                          
+                          
+                          <div class="experience-content">
+                            <h2 class="project-title-back">Steam game recommendation</h2>
+                            <ul>
+                              <li>Devised a model that provides personalized recommendations to video gamers to purchase a new game based on user behavior by applying preprocessing methods and performing exploratory data analysis on the dataset using PySpark (Big Data Framework).
+                              </li>
+                              <li>
+                                Trained and compared between Matrix Vectorization – ALS, and Item-Item Recommendation - Cosine Similarity & Pearson Coefficient. Calculated Root Mean Squared Error (RMSE) value for understanding the effectiveness of each model.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <div class="project-card color-container flip-card" data-card="proj9">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                              src="./assets/underconstruction.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                        
+                        <h2 class="experience-sub-title project-title">Covid Detection using Xray</h2>
+                        <div class="btn-container">
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('')"
+                            >
+                        Github
+                          </button>
+                          <button
+                            class="btn btn-color-2 "
+                            onclick="flipCard('proj9')"
+                          >
+                            Description
+                          </button>
+                        </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <button class="flip-card-back-close" onclick="flipToFront('proj9')">X</button>
+                          
+                          <div class="experience-content">
+                            <h2 class="project-title-back">Covid Detection using Xray</h2>
+                            <ul>
+                              <li>Developed a deep learning-based classification system using convolutional neural networks (CNNs) to identify COVID-19, pneumonia, and normal cases in chest radiography images.
+                              </li>
+                              <li>
+                                Leveraged transfer learning techniques with MobileNetV2 as a feature extractor and implemented a custom CNN model from scratch, optimizing hyperparameters such as batch size, learning rate, and early stopping for improved accuracy.
+                              </li>
+                              <li>
+                                Utilized Python, TensorFlow, and Keras to preprocess, train, and evaluate the models, achieving an accuracy of 86.25% for the custom CNN model and 84% for MobileNetV2, demonstrating the potential for assisting radiologists in COVID-19 diagnosis.
+
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+
+                </div>
+              </section>
+      
+          
+      
+      
+
+     
     
 
       <!--============================== Contact Me ===========================-->

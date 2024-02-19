@@ -970,16 +970,16 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form id="contact__form" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <lalel for="" class="contact__label">Name</lalel>
-                <input type="text" class="contact__input">
+                <input type="text" id='user_name' class="contact__input" required minlength="3">
               </div>
 
               <div class="contact__content">
                 <lalel for="" class="contact__label">Email</lalel>
-                <input type="email" class="contact__input">
+                <input type="email" id='user_email' class="contact__input" required>
               </div>
             </div>
 
@@ -991,16 +991,22 @@
             
             <div class="contact__content">
               <lalel for="" class="contact__label">Message</lalel>
-              <textarea name="" id="" cols="0" rows=7" class="contact__input"></textarea>
+              <textarea name="" id='user_message' cols="0" rows=7" class="contact__input" required minlength="10"></textarea>
             </div>
 
-            <div>
-              <a href="#" class="button button--flex">
+
+              <button  class="button button--flex" value="Send">
                 Send Message <i class="uil uil-message"></i>
+              </button>
+
+              <!-- Error / Success message -->
+              <a id="message-container" href="#" class="button button--flex uil message-container">
+                <h3 id="message"></h3>
               </a>
-            </div>
 
           </form>
+
+          
         </div>
       </section>
 
@@ -1040,11 +1046,10 @@
         </div>
       </footer>
 
-
-
     </main>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./js/email.js"></script>
     <script src="./js/main.js"></script>
-
   </body>
 </html>

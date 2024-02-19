@@ -1106,3 +1106,7 @@ img {
   50% { border-color: #57e0e0; }
 }
 
+.message-container{
+  display : none
+}
+

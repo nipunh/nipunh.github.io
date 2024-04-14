@@ -354,6 +354,9 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  border : none;
+  width : 100%;
+  margin :0;
 }
 
 .button:hover {
@@ -514,11 +517,21 @@ img {
   margin-right: var(--mb-0-25);
 }
 
+
 .qualification__data {
   display: grid;
+  min-height: 150px;
   grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
 }
+
+.qualification__details{
+  margin-left: 20px;
+}
+
+/* .qualification-container{
+  padding: 1rem;
+} */
 
 .qualification__title {
   font-size: var(--normal-font-size);
@@ -537,19 +550,37 @@ img {
 }
 
 .qualification__rounder {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
+  margin-top:1rem;
+  position : absolute;
+  top : 12.5px;
+  width: 60px; /* Adjust the width and height as needed for the logo */
+  height: 60px;
+  background-size: cover; /* Ensure the logo fills the entire circle */
+  background-repeat: no-repeat; /
   background-color: var(--first-color-alt);
   border-radius: 50%;
+  border : 1px solid var(--first-color);
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 .qualification__line {
-  display: block;
+  position: relative;
+  /* left: 230px; Adjusted left position to align with circle */
+  top: 80px;
   width: 1px;
   height: 100%;
   background-color: var(--first-color);
-  transform: translate(6px, -7px);
+  transform: translateY(-50%);
+  z-index: 0;
+  display: block;
+  /* width: 1px; */
+  /* height: calc(100% - 770px); */
+  /* background-color: var(--first-color); */
+  /* transform: translate(6px, -7px); */
+  /* position : absolute; */
+  /* z-index: 0; */
+  /* clip-path: inset(-6px -6px 0 0); */
 }
 
 .qualification [data-content] {
@@ -558,10 +589,20 @@ img {
 
 .qualification__active[data-content] {
   display: block;
+
+}
+
+.qualification__data {
+  position: relative; /* Ensure proper positioning of circles and lines */
 }
 
 .qualification__content {
   margin-top: var(--mb-1-5);
+  position: relative;
+}
+
+.qualification__content .qualification__data:last-child .qualification__line {
+  display: none; /* Hide the last line to avoid extending beyond the section */
 }
 
 /* ================================================  Skills  ============================================= */
@@ -1066,7 +1107,7 @@ img {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about__info {

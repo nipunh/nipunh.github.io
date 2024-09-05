@@ -726,7 +726,7 @@ img {
   border-top: 5px solid hsl(180, 62%, 55%);
   border-color: rgb(180, 62%, 55%);
   text-align: center;
-  /* height: 500px; */
+  min-height: 500px;
   padding: 0.5rem;
   margin: 1rem;
 }
@@ -769,6 +769,7 @@ img {
 }
  .tab {
 	 display: flex;
+   flex-direction : row;
 	 align-items: center;
 	 justify-content: center;
 	 height: 34px;
@@ -819,6 +820,10 @@ img {
 }
  input[id="radio-3"]:checked ~ .glider {
 	 transform: translateX(200%);
+}
+
+input[id="radio-4"]:checked ~ .glider {
+  transform: translateX(300%);
 }
 
  @media (max-width: 700px) {

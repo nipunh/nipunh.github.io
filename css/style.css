@@ -726,7 +726,7 @@ img {
   border-top: 5px solid hsl(180, 62%, 55%);
   border-color: rgb(180, 62%, 55%);
   text-align: center;
-  /* height: 500px; */
+  min-height: 500px;
   padding: 0.5rem;
   margin: 1rem;
 }
@@ -735,24 +735,22 @@ img {
   font-family: var(--body-font);
 }
 
-
-
 @media screen and (max-width: 600px) {
   .portfolio__container{ 
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-
 } 
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
 
  .container-tabs {
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
-}
+} 
+
  .tabs {
 	 display: flex;
 	 position: relative;
@@ -764,11 +762,14 @@ img {
  .tabs * {
 	 z-index: 2;
 }
+
  input[type="radio"] {
 	 display: none;
 }
+
  .tab {
 	 display: flex;
+   flex-direction : row;
 	 align-items: center;
 	 justify-content: center;
 	 height: 34px;
@@ -819,6 +820,10 @@ img {
 }
  input[id="radio-3"]:checked ~ .glider {
 	 transform: translateX(200%);
+}
+
+input[id="radio-4"]:checked ~ .glider {
+  transform: translateX(300%);
 }
 
  @media (max-width: 700px) {

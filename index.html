@@ -33,27 +33,23 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="uil uil-file-alt nav__icon"></i> Skills
-            </a>
-          </li>
-          <li class="nav__item">
             <a href="#qualification" class="nav__link">
               <i class="uil uil-university nav__icon"></i> Education
             </a>
           </li>
-          <!-- <li class="nav__item">
-              <a href="#qualification" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Experience
-              </a>
-            </li> -->
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i> Skills
+            </a>
+          </li>
+        
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">
               <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#contact" class="nav__link">
               <i class="uil uil-briefcase-alt nav__icon"></i> Contact Me
             </a>
           </li>
@@ -1027,13 +1023,6 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
     <!--============================== Contact Me ===========================-->
 
     <section class="contact section" id="contact">
@@ -1069,33 +1058,27 @@
           </div>
         </div>
 
-        <form id="contact__form" class="contact__form grid">
+        <form id="contact__form" class="contact__form grid" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f8a3ff40-fdc5-4566-b1e5-80a060ed2ad5">
           <div class="contact__inputs grid">
             <div class="contact__content">
               <lalel for="" class="contact__label">Name</lalel>
-              <input type="text" id='user_name' class="contact__input" required minlength="3">
+              <input type="text" id='user_name' class="contact__input" required minlength="3" type="text" name="name">
             </div>
 
             <div class="contact__content">
               <lalel for="" class="contact__label">Email</lalel>
-              <input type="email" id='user_email' class="contact__input" required>
+              <input type="email" id='user_email' class="contact__input" required type="email" name="email">
             </div>
           </div>
 
-          <!-- <div class="contact__content">
-              <lalel for="" class="contact__label">Project</lalel>
-              <input type="text" class="contact__input">
-            </div> -->
-
-
           <div class="contact__content">
             <lalel for="" class="contact__label">Message</lalel>
-            <textarea name="" id='user_message' cols="0" rows=7" class="contact__input" required
-              minlength="10"></textarea>
+            <textarea id='user_message' cols="0" rows=7" class="contact__input" minlength="10" name="message" required></textarea>
           </div>
-
-
-          <button class="button button--flex" value="Send">Send Message <i class="uil uil-message"></i>
+          <input type="hidden" name="redirect" value="http://nipunh.github.io/">
+          <input type="checkbox" name="botcheck" class="hidden"  style="display: none;">
+          <button class="button button--flex" value="Send" type="submit">Send Message <i class="uil uil-message"></i>
           </button>
 
           <!-- Error / Success message -->

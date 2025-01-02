@@ -767,6 +767,43 @@
       </div>
 
       <div class="portfolio__container" id="open_source" style="display:none">
+        <div class="project-card color-container flip-card" data-card="proj14">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/sentry.jpeg" alt="Project 1" class="project-img" />
+
+              <h2 class="experience-sub-title project-title">Sentry</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/getsentry/sentry/issues/82508')">
+                  Bug Ticket
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/getsentry/sentry/pull/82642')">
+                  My Contribution
+                </button>
+                <button class="btn btn-color-2 " onclick="flipCard('proj14')">
+                  Description
+                </button>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <button class="flip-card-back-close" onclick="flipToFront('proj14')">X</button>
+              <div class="experience-content">
+                <h2 class="project-title-back">Sentry</h2>
+                <ul>
+                  <li>Sentry automatically detects and notifies you of critical performance issues so you can trace every slow transaction to a poor-performing API call or DB query.</li>
+                  <li>My Contributions : </li>
+                  <ul style="margin-left: 2rem;">
+                    <li>Resolved a bug</li>
+                  </ul>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
         <div class="project-card color-container flip-card" data-card="proj11">
           <div class="flip-card-inner">
             <div class="flip-card-front">

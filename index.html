@@ -1179,12 +1179,16 @@
           </div>
         </div>
 
-        <p class="footer__copy">&#169; NipunHedaoo. All rights reserved.</p>
-        <div id="count">...</div>
+        <p class="footer__copy">&#169; NipunHedaoo. All rights reserved. </p>
+        
       </div>
     </footer>
   </main>
-  <script src="./js/counter.js"></script>
+  <script>
+    function updateVisitCount(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+    </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

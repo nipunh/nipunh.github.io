@@ -103,6 +103,7 @@
                     "Enhanced the layout of the project details page by adopting a two-column design for recent issues and releases, aligning it with the main page's structure."
                 ],
                 "links": {
+                    "github" : "https://github.com/OWASP/Nest/pulls?q=is%3Apr+is%3Aclosed+author%3Anipunh",
                     "bug_ticket": "https://github.com/cyclops-ui/cyclops/issues/421",
                     "my_contribution": "https://github.com/cyclops-ui/cyclops/pull/491"
                 }
@@ -117,6 +118,7 @@
                     "Fixed display issues with native stack traces, ensuring register visibility and proper button placement."
                 ],
                 "links": {
+                    "github" : "https://github.com/getsentry/sentry/pulls?q=is+author%3Anipunh",
                     "bug_ticket": "https://github.com/getsentry/sentry/issues/82508",
                     "my_contribution_1": "https://github.com/getsentry/sentry/pull/82642",
                     "enhancement_ticket": "https://github.com/getsentry/sentry/issues/82371",
@@ -130,6 +132,7 @@
                 "description": "Cyclops is an open-source dev tool that simplifies Kubernetes with an easy-to-use UI, making it less intimidating. Instead of creating and configuring your Kubernetes manifests with YAML, use Cyclops to painlessly configure and deploy your applications - validations included!",
                 "contribution": ["Improved state-management to better tackle loading state of multiple templates in Table."],
                 "links": {
+                    "github" : "https://github.com/cyclops-ui/cyclops/pulls?q=is%3Apr+is%3Aclosed+author%3Anipunh",
                     "bug_ticket": "https://github.com/cyclops-ui/cyclops/issues/421",
                     "my_contribution": "https://github.com/cyclops-ui/cyclops/pull/491"
                 }

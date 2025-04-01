@@ -60,22 +60,64 @@ tabs.forEach(tab => {
 
 // =================================== Portfolio ======================
 
-// var swiper = new Swiper(".portfolio__container", {
-//   cssMode: true,
-//   loop : true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable : true
-//   },
+async function fetchProjects() {
+  try {
+    const response = await fetch('data/projects.json');  // Ensure the correct path
+    const projects = await response.json();
 
-//   mousewheel : true,
-//   keyboard : true
-// });
+    Object.entries(projects["projects"]).forEach(([category, categoryProjects]) => {
+      Object.values(categoryProjects).forEach(project => {
+        createProjectCard(project, category);
+      });
+    });
+  } catch (error) {
+    console.error('Error fetching project data:', error);
+  }
+}
 
+function createProjectCard(project, category) {
+  const container = document.getElementById(category);
+  const card = document.createElement('div');
+  card.classList.add('project-card', 'color-container', 'flip-card');
+  card.setAttribute('data-card', project.id);
+
+  const flipCardInner = document.createElement('div');
+  flipCardInner.classList.add('flip-card-inner');
+
+  const flipCardFront = document.createElement('div');
+  flipCardFront.classList.add('flip-card-front');
+  flipCardFront.innerHTML = `
+    <img src="${project.image}" alt="${project.title}" class="project-img" />
+    <h2 class="experience-sub-title project-title">${project.title}</h2>
+    <div class="btn-container">
+      ${project.links?.live ? `<button class="btn btn-color-2 project-btn" onclick="window.open('${project.links.live}', '_blank')">Live Demo</button>` : ''}
+      ${project.links?.github ? `<button class="btn btn-color-2" onclick="window.open('${project.links.github}', '_blank')">Github</button>` : ''}
+      <button class="btn btn-color-2" onclick="flipCard('${project.id}')">Description</button>
+    </div>
+  `;
+
+  const flipCardBack = document.createElement('div');
+  flipCardBack.classList.add('flip-card-back');
+  flipCardBack.innerHTML = `
+    <button class="flip-card-back-close" onclick="flipToFront('${project.id}')">X</button>
+    <div class="experience-content">
+      <h2 class="project-title-back">${project.title}</h2>
+        <ul class="experience-content ul">
+          <li>${project.description}</li>
+          ${
+            project?.contribution?.map(contri => `<li>${contri}</li>`).join('')
+          }
+        </ul>
+    </div>
+  `;
+
+  flipCardInner.appendChild(flipCardFront);
+  flipCardInner.appendChild(flipCardBack);
+  card.appendChild(flipCardInner);
+  container.appendChild(card);
+}
+
+document.addEventListener('DOMContentLoaded', fetchProjects);
 
 // ================================== Skills ==========================
 

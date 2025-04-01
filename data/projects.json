@@ -1,0 +1,183 @@
+{
+    "projects" : {
+        "web_development": [
+        {
+            "id": 1,
+            "title": "Cryptocurrency Tracker",
+            "image": "../assets/cryptoTracker.png",
+            "description": "Constructed a web application using React to monitor prices and performance of 4000+ cryptocurrencies in real-time.",
+            "contribution": [
+                "Utilized Redux Toolkit for streamlined state management and integrated 2 APIs for real-time data-driven decision-making.",
+                "Leveraged Chart.js features to visualize historical data using 8+ graphs, and Jest for unit testing."
+            ],
+            "links": {
+                "live": "https://main--cerulean-tartufo-01ec5f.netlify.app/",
+                "github" : "https://github.com/nipunh/cryptotracker"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Job Portal",
+            "image": "../assets/jobportal.png",
+            "description": "Created a full-stack user-friendly web application for job seekers, streamlining job searching and posting process.",
+            "contribution": [
+                "Leveraged Angular for the frontend and Spring Boot with MongoDB for the backend.",
+                "Established JWT token-based authentication for enhanced user access control."
+            ],
+            "links": {
+                "github": "https://github.com/nipunh/Job-Search-Platform"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Ecommerce Web Application",
+            "image": "../assets/underconstruction.png",
+            "description": "Conceptualized and engineered a full-stack e-commerce web application using cutting-edge Javascript frameworks.",
+            "contribution": [
+                "Developed REST API endpoints with Node.js, Express, and MongoDB.", 
+                "Integrated third-party APIs, like Google Maps, Twilio, and Stripe with React to enhance functionalities."
+            ],
+            "links": {
+                "github": "https://github.com/nipunh/Ecommerce-Web-Application"
+            }
+        },
+        {
+            "id": 4,
+            "title": "3D Tshirt Design",
+            "image": "../assets/underconstruction.png",
+            "description": "Developed an immersive and visually stunning ThreeJS-powered 3D product website with integrated artificial intelligence features.",
+            "contribution": [
+                "Leveraged DALLE AI (OpenAI API) to generate images and employed TailwindCSS for efficient utility-first styling, ensuring a responsive design across devices."
+            ],
+            "links": {
+                "github": ""
+            }
+        }
+        ],
+        "mobile_development": [
+            {
+                "id": "5",
+                "title": "Reselling Platform",
+                "image": "../assets/resseller.png",
+                "links": {
+                    "github" : "https://github.com/nipunh/reseller"
+                },
+                "description": "Led the end-to-end development of a dynamic mobile application using React Native, spearheading the creation of a comprehensive platform for streamlined item reselling.",
+                "contribution": []
+            },
+            {
+                "id": "6",
+                "title": "Expense Tracker",
+                "image": "../assets/expense.png",
+                "link": {
+                    "github" : "https://github.com/nipunh/react-native-expense-tracker"
+                },
+                "description": "Designed and Developed a React Native and Firebase based expense tracker with features such as expense tracking, categorization, receipt storage, and visualizations, for users to effectively manage their expenses and gain valuable insights into their spending habits."
+                
+            },
+            {
+                "id": "7",
+                "title": "Restaurant App",
+                "image": "../assets/fooddelivery.png",
+                "description": "Mobile application for user to browse restaurant menus, customize orders, and place orders. Utilized device location to suggest nearby restaurants allowing users to search for restaurants by distance.",
+                "contribution" : [
+                    "Developed a real-time chat feature using Flutter Streams and firebase firestore for communication with restaurant staff.",
+                    "Offered table reservations and utilized notifications and reminders to keep users updated on reservations.",
+                    "Implemented the BLoC architecture to integrate the Stripe payment gateway supporting various payment methods."
+                ],
+
+                "links" : {}
+            }
+        ],
+        "open_source": [
+            {
+                "id": "8",
+                "title": "OWASP",
+                "image": "../assets/owasp.jpg",
+                "description": "OWASP Nest is a centralized platform developed by the Open Worldwide Application Security Project (OWASP) to enhance collaboration and engagement within its global community.",
+                "contribution": [
+                    "Introduced a new component to display information about entity leaders within the application.",
+                    "Developed a new page that provides snapshots or summaries of various community activities and statistics.",
+                    "Resolved issues related to the display of map borders on both the Chapter and Main pages, enhancing visual consistency.",
+                    "Corrected the color of cluster markers on maps to improve readability and user experience.",
+                    "Enhanced the layout of the project details page by adopting a two-column design for recent issues and releases, aligning it with the main page's structure."
+                ],
+                "links": {
+                    "bug_ticket": "https://github.com/cyclops-ui/cyclops/issues/421",
+                    "my_contribution": "https://github.com/cyclops-ui/cyclops/pull/491"
+                }
+            },
+            {
+                "id": "9",
+                "title": "Sentry",
+                "image": "../assets/sentry.jpeg",
+                "description": "Sentry automatically detects and notifies you of critical performance issues so you can trace every slow transaction to a poor-performing API call or DB query.",
+                "contribution": [
+                    "Addressed UI issues related to the account notification settings input, enhancing user experience.",
+                    "Fixed display issues with native stack traces, ensuring register visibility and proper button placement."
+                ],
+                "links": {
+                    "bug_ticket": "https://github.com/getsentry/sentry/issues/82508",
+                    "my_contribution_1": "https://github.com/getsentry/sentry/pull/82642",
+                    "enhancement_ticket": "https://github.com/getsentry/sentry/issues/82371",
+                    "my_contribution_2": "https://github.com/getsentry/sentry/pull/82641"
+                }
+            },
+            {
+                "id": "10",
+                "title": "Cyclops",
+                "image": "../assets/cyclops.png",
+                "description": "Cyclops is an open-source dev tool that simplifies Kubernetes with an easy-to-use UI, making it less intimidating. Instead of creating and configuring your Kubernetes manifests with YAML, use Cyclops to painlessly configure and deploy your applications - validations included!",
+                "contribution": ["Improved state-management to better tackle loading state of multiple templates in Table."],
+                "links": {
+                    "bug_ticket": "https://github.com/cyclops-ui/cyclops/issues/421",
+                    "my_contribution": "https://github.com/cyclops-ui/cyclops/pull/491"
+                }
+            },
+            {
+                "id": "11",
+                "title": "Openpedia",
+                "image": "../assets/openpedia.png",
+                "description": "Openpedia provides a wealth of useful resources that enable developers to become a seasoned open source contributor.",
+                "contribution":["Converted static component to dynamic component and resolved bug in footer & navigation."],
+                "links": {
+                    "github": "https://github.com/Sriparno08/Openpedia",
+                    "live": "https://openpedia.netlify.app/"
+                }
+            }
+        ],
+        "ml_development": [
+        {
+            "id": "12",
+            "title": "AI Face Mask",
+            "image": "../assets/underconstruction.png",
+            "description": "Trained a Convolutional Neural Network model to analyze face images and detect whether a person is wearing a mask or not, the type of mask being worn, and whether the mask is worn correctly.",
+            "contribution": ["Achieved 73.4% accuracy on the validation model and identified bias affecting model performance."],
+            "links": {
+                "github": "https://github.com/nipunh/MaskNet"
+            }
+        },
+        {
+            "id": "13",
+            "title": "Steam Game Recommendation",
+            "image": "../assets/underconstruction.png",
+            "description": "Developed a recommendation model for personalized game suggestions based on user behavior, applying preprocessing methods and performing exploratory data analysis using PySpark.",
+            "contribution": ["Trained and compared between Matrix Vectorization – ALS and Item-Item Recommendation – Cosine Similarity & Pearson Coefficient, calculating RMSE to evaluate models."],
+            "links": {
+                "github": "https://github.com/VishanthSurresh/Steam-Game-Recommendation/tree/main"
+            }
+        },
+        {
+            "id": "14",
+            "title": "Covid Detection using Xray",
+            "image": "../assets/underconstruction.png",
+            "description": "Developed a deep learning classification system using CNNs to detect COVID-19, pneumonia, and normal cases in chest X-rays using MobileNetV2 and custom CNN models.",
+            "contribution": ["Achieved an accuracy of 86.25% for the custom CNN model and 84% for MobileNetV2, assisting radiologists in COVID-19 diagnosis."],
+            "links": {
+                "github": ""
+            }
+        }
+        ]
+    }
+}
+  

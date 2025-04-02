@@ -111,7 +111,7 @@
             {
                 "id": "9",
                 "title": "Sentry",
-                "image": "../assets/sentry.jpeg",
+                "image": "../assets/images.jpeg",
                 "description": "Sentry automatically detects and notifies you of critical performance issues so you can trace every slow transaction to a poor-performing API call or DB query.",
                 "contribution": [
                     "Addressed UI issues related to the account notification settings input, enhancing user experience.",

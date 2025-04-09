@@ -144,8 +144,7 @@
                 "description": "Openpedia provides a wealth of useful resources that enable developers to become a seasoned open source contributor.",
                 "contribution":["Converted static component to dynamic component and resolved bug in footer & navigation."],
                 "links": {
-                    "github": "https://github.com/Sriparno08/Openpedia",
-                    "live": "https://openpedia.netlify.app/"
+                    "github": "https://github.com/Sriparno08/Openpedia"
                 }
             }
         ],

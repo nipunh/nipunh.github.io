@@ -42,7 +42,7 @@
               <i class="uil uil-file-alt nav__icon"></i> Skills
             </a>
           </li>
-        
+
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">
               <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
@@ -275,7 +275,7 @@
                   Full Stack Developer
                 </h3>
                 <span class="qualification--subtitle">T-Mobile</span><br />
-                <i class="uil uil-calendar-alt"> Oct 2024 - Present  </i>
+                <i class="uil uil-calendar-alt"> Oct 2024 - Present </i>
               </div>
             </div>
 
@@ -297,7 +297,7 @@
             </div>
 
             <!-- Work  2 -->
-            <div class="qualification__data">
+            <!-- <div class="qualification__data">
               <div></div>
 
               <div>
@@ -311,10 +311,18 @@
                 <span class="qualification--subtitle">Wetext.ai</span><br />
                 <i class="uil uil-calendar-alt"> March 2022 - Nov 2023 </i>
               </div>
-            </div>
+            </div> -->
 
             <!-- Work 3 -->
             <div class="qualification__data">
+              <div></div>
+              <div>
+                <div class="qualification__rounder" style="background-image: url('./assets/platos.jpg');">
+
+                </div>
+                <span class="qualification__line"></span>
+              </div>
+
               <div class="qualification__details">
                 <h3 class="qualification__title">
                   Software Developer
@@ -323,18 +331,16 @@
                 <i class="uil uil-calendar-alt"> Aug 2020 - Nov 2021 </i>
               </div>
 
-              <div>
-                <div class="qualification__rounder" style="background-image: url('./assets/platos.jpg');">
-
-                </div>
-                <span class="qualification__line"></span>
-              </div>
             </div>
 
             <!-- Work  4 -->
             <div class="qualification__data">
-              <div></div>
 
+              <div class="qualification__details">
+                <h3 class="qualification__title">Software Developer Intern</h3>
+                <span class="qualification--subtitle">Virtusa Technologies</span><br />
+                <i class="uil uil-calendar-alt"> May 2019 - July 2019</i>
+              </div>
               <div>
                 <div class="qualification__rounder" style="background-image: url('./assets/virtusa.jpeg');">
 
@@ -342,11 +348,7 @@
                 <span class="qualification__line"></span>
               </div>
 
-              <div class="qualification__details">
-                <h3 class="qualification__title">Software Developer Intern</h3>
-                <span class="qualification--subtitle">Virtusa Technologies</span><br />
-                <i class="uil uil-calendar-alt"> May 2019 - July 2019</i>
-              </div>
+
             </div>
 
 
@@ -504,11 +506,11 @@
 
       <div class="container-tabs">
         <div class="tabs">
-          <input type="radio" onclick="changeSection('web_development')" id="radio-1" name="tabs" checked/>
+          <input type="radio" onclick="changeSection('web_development')" id="radio-1" name="tabs" checked />
           <label class="tab" for="radio-1">Web Application</label>
           <input type="radio" onclick="changeSection('mobile_development')" id="radio-2" name="tabs" />
           <label class="tab" for="radio-2">Mobile Application</label>
-          <input type="radio" onclick="changeSection('open_source')" id="radio-3" name="tabs"  />
+          <input type="radio" onclick="changeSection('open_source')" id="radio-3" name="tabs" />
           <label class="tab" for="radio-3">Open Source Contribution</label>
           <input type="radio" onclick="changeSection('ml_development')" id="radio-4" name="tabs" />
           <label class="tab" for="radio-4">Machine Learning & AI</label>
@@ -525,7 +527,7 @@
         </select>
       </div>
 
-      <div class="portfolio__container" id="web_development" ></div>
+      <div class="portfolio__container" id="web_development"></div>
       <div class="portfolio__container" id="mobile_development" style="display:none"></div>
       <div class="portfolio__container" id="open_source" style="display:none"></div>
       <div class="portfolio__container" id="ml_development" style="display:none"></div>
@@ -583,10 +585,11 @@
 
           <div class="contact__content">
             <lalel for="" class="contact__label">Message</lalel>
-            <textarea id='user_message' cols="0" rows=7" class="contact__input" minlength="10" name="message" required></textarea>
+            <textarea id='user_message' cols="0" rows=7" class="contact__input" minlength="10" name="message"
+              required></textarea>
           </div>
           <input type="hidden" name="redirect" value="http://nipunh.github.io/">
-          <input type="checkbox" name="botcheck" class="hidden"  style="display: none;">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <button class="button button--flex" value="Send" type="submit">Send Message <i class="uil uil-message"></i>
           </button>
 
@@ -635,8 +638,11 @@
       </div>
     </footer>
   </main>
-  <script src="https://tracking-cdn.netlify.app/tracking.js?token=efc7a257b010372dfdc16c6dd3b474fa711aa5842a490f5e9d22d774c60a2170" async></script>
+  <script
+    src="https://tracking-cdn.netlify.app/tracking.js?token=efc7a257b010372dfdc16c6dd3b474fa711aa5842a490f5e9d22d774c60a2170"
+    async></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
